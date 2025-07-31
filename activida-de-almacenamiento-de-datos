@@ -8,3 +8,67 @@ Cantidad de datos en kb:
 4."13.74 kB"
 
 Total:87.85 kb
+
+## 4. Ejercicios Finales de Repaso
+
+1. Explica, en tus propias palabras, por qué es necesario que las computadoras representen los datos en binario.
+2. Convierte el número binario 10011011 a decimal y a hexadecimal.
+3. Investiga y describe cómo se representa una imagen en formato PNG en el disco.
+4. Analiza la siguiente situación: ¿Qué sucede si intentas almacenar un número mayor al que puede representar un byte (por ejemplo, 300)? ¿Cómo lo maneja Python?
+
+DESARROLLO:
+1. Las computadoras funcionan con electricidad, y sus componentes internos solo pueden detectar dos estados: encendido (Con voltaje) y apagado (falta devoltaje). Por eso, usan el sistema binario, que tiene solo dos dígitos: 0 y 1. Estos dígitos representan los dos estados posibles del hardware. Gracias a este sistema, es posible representar cualquier tipo de dato incluyendo números, letras, imágenes y hasta sonidos como una secuencia de ceros y unos, que las computadoras pueden almacenar, procesar y transmitir fácilmente. 
+
+2. número binario 10011011
+-- 1×2⁷ + 0×2⁶ + 0×2⁵ + 1×2⁴ + 1×2³ + 0×2² + 1×2¹ + 1×2⁰
+= 128 + 0 + 0 + 16 + 8 + 0 + 2 + 1
+= 155--Forma decimal
+
+--Separamos en: 1001 1011
+--convertimos: 
+1001 = 1×8 + 0×4 + 0×2 + 1×1 = 9
+1011 = 1×8 + 0×4 + 1×2 + 1×1 = 11
+--Buscamos en la tabla:
+9--->9
+11-->B   Resultado: 9B----Forma Hexagesimal
+
+3. ¿Cómo se representa una imagen en formato PNG en el disco?
+Una imagen PNG se guarda como un archivo binario que contiene diferentes tipos de datos comprimidos sin pérdida. El formato PNG (Portable Network Graphics) se compone de una serie de bloques (chunks), cada uno con un propósito específico. Algunos de los bloques más importantes son:
+
+IHDR: Contiene información básica como ancho, alto, profundidad de color y tipo de imagen.
+
+IDAT: Contiene los datos de la imagen comprimidos usando el algoritmo Deflate.
+
+IEND: Marca el final del archivo PNG.
+
+PLTE (opcional): Paleta de colores, si se usa color indexado.
+
+Otros bloques pueden contener metadatos, información de transparencia (tRNS), entre otros.
+
+El contenido de la imagen se representa como valores numéricos, y se comprime para ahorrar espacio. Al abrir la imagen, el sistema operativo o el programa decodifica estos datos para mostrar la imagen en pantalla.
+
+4. ¿Qué sucede si intentas almacenar un número mayor al que puede representar un byte (por ejemplo, 300)? ¿Cómo lo maneja Python?
+Un byte puede almacenar valores entre 0 y 255 (es decir, 2⁸ posibles combinaciones). Si intentas almacenar un número mayor como 300, en un byte puro (como en C o ensamblador), se produce un desbordamiento, lo que puede causar errores o resultados inesperados.
+
+Sin embargo, Python maneja esto de manera diferente. Python no tiene un límite fijo para los enteros. Internamente, Python cambia de una representación fija (como 32 o 64 bits) a una más flexible llamada "long int", que puede almacenar números mucho más grandes usando más memoria.
+
+Por ejemplo:
+
+python
+Copiar
+Editar
+x = 300
+print(x)
+Esto funciona sin problema, porque Python automáticamente reserva más espacio si el número no cabe en un byte. Pero si tú intentas convertir este número a un tipo de dato que solo acepta 1 byte, como:
+
+python
+Copiar
+Editar
+bytes([300])
+Se generará un error:
+
+python
+Copiar
+Editar
+ValueError: bytes must be in range(0, 256)
+Esto significa que el número excede el rango permitido por un byte y Python detiene la operación con un mensaje de error, evitando un resultado erróneo.

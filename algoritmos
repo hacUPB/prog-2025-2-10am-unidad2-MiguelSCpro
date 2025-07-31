@@ -1,4 +1,4 @@
-Pseudocódigo: 
+## Pseudocódigo: 
 Es una representación en lenguaje natural de los pasos que conforman un algoritmo. Se utiliza para describir de manera estructurada y comprensible las acciones necesarias para resolver un problema antes de implementarlo en un lenguaje de programación.
 Por ejemplo, para calcular el área de un triángulo:
 Inicio
@@ -24,6 +24,22 @@ Norma ANSI/ISO 5807
 ![Imagen](../prog-2025-2-10am-unidad2-MiguelSCpro/images/Captura%20de%20pantalla%202025-07-31%20104500.png
 )
 
+## Ejercicio 2
+
+Analicemos el siguiente problema y representemos su solución mediante un algoritmo secuencial.
+
+- Construye un algoritmo que, al recibir como datos **el ID** del empleado y los seis primeros sueldos del año, calcule el ingreso total semestral y el promedio mensual, e imprima el ID del empleado, el ingreso total y el promedio mensual.
+
+## Solucion
+
+```
+Inicio
+leer ID,S1,S2,S3,S4,S5,S6
+Total = S1 + S2 + S3 + S4 + S5 + S6
+Promedio = Total/6
+Escribir ID, total, promedio
+FIN
+```
 
 
 

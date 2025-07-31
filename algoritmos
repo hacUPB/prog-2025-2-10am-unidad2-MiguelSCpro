@@ -1,0 +1,35 @@
+Pseudocódigo: 
+Es una representación en lenguaje natural de los pasos que conforman un algoritmo. Se utiliza para describir de manera estructurada y comprensible las acciones necesarias para resolver un problema antes de implementarlo en un lenguaje de programación.
+Por ejemplo, para calcular el área de un triángulo:
+Inicio
+Leer base, altura
+Calcular área = (base * altura) / 2
+Mostrar área
+Fin
+
+## Ejercicio 1.
+
+Investiga cuáles son los símbolos que se utilizan para representar cada operación de un algorimo con un diagrama de flujo. Asegúrate de que la fuente es confiable, discute lo que encontraste con tus compañeros y con el profe. Cuando estés seguro/a de tener los símbolos correctos, consigna la información en la bitácora.
+
+Símbolos más comunes en un diagrama de flujo
+Símbolo	Nombre	Función
+🔷 (Rombo)	Decisión	Representa una pregunta o condición con dos posibles respuestas (Sí/No, Verdadero/Falso). Ej: ¿x > 10?
+🔽 (Óvalo)	Inicio / Fin	Señala el comienzo o final del algoritmo. Siempre debe haber al menos uno de cada.
+▭ (Rectángulo)	Proceso	Indica una acción o instrucción que debe ejecutarse. Ej: x = x + 1
+🔲 (Paralelogramo)	Entrada / Salida	Muestra la entrada de datos (Ej: leer nombre) o la salida de información (Ej: mostrar resultado).
+🔄 (Flechas)	Conectores de flujo	Indican el sentido del proceso. Muestran la dirección que sigue el algoritmo.
+
+🧠 Recomendaciones para discutir con tus compañeros y el profesor:
+Pregunta si se pueden usar otros símbolos según el programa (por ejemplo, algunos editores usan íconos diferentes).
+
+Verifica si todos los símbolos deben estar etiquetados con texto dentro (por claridad).
+
+Pregunta por ejemplos reales donde hayan usado diagramas de flujo (en programación, en la vida cotidiana, etc.).
+
+📚 Fuente confiable sugerida para investigar más:
+Norma ANSI/ISO 5807 (Estandariza los símbolos de diagramas de flujo).
+
+Libros de introducción a la programación (por ejemplo: Fundamentos de Programación, de Luis Joyanes Aguilar).
+
+Sitios educativos confiables como Khan Academy, GeeksforGeeks o Tutorialspoint.
+

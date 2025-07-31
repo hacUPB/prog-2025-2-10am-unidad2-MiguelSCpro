@@ -19,17 +19,11 @@ Símbolo	Nombre	Función
 🔲 (Paralelogramo)	Entrada / Salida	Muestra la entrada de datos (Ej: leer nombre) o la salida de información (Ej: mostrar resultado).
 🔄 (Flechas)	Conectores de flujo	Indican el sentido del proceso. Muestran la dirección que sigue el algoritmo.
 
-🧠 Recomendaciones para discutir con tus compañeros y el profesor:
-Pregunta si se pueden usar otros símbolos según el programa (por ejemplo, algunos editores usan íconos diferentes).
+FUENTE:
+Norma ANSI/ISO 5807
+![Imagen](../prog-2025-2-10am-unidad2-MiguelSCpro/images/Captura%20de%20pantalla%202025-07-31%20104500.png
+)
 
-Verifica si todos los símbolos deben estar etiquetados con texto dentro (por claridad).
 
-Pregunta por ejemplos reales donde hayan usado diagramas de flujo (en programación, en la vida cotidiana, etc.).
 
-📚 Fuente confiable sugerida para investigar más:
-Norma ANSI/ISO 5807 (Estandariza los símbolos de diagramas de flujo).
-
-Libros de introducción a la programación (por ejemplo: Fundamentos de Programación, de Luis Joyanes Aguilar).
-
-Sitios educativos confiables como Khan Academy, GeeksforGeeks o Tutorialspoint.
 

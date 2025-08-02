@@ -1,0 +1,65 @@
+## Pseudocódigo: 
+Es una representación en lenguaje natural de los pasos que conforman un algoritmo. Se utiliza para describir de manera estructurada y comprensible las acciones necesarias para resolver un problema antes de implementarlo en un lenguaje de programación.
+Por ejemplo, para calcular el área de un triángulo:
+Inicio
+Leer base, altura
+Calcular área = (base * altura) / 2
+Mostrar área
+Fin
+
+## Ejercicio 1.
+
+Investiga cuáles son los símbolos que se utilizan para representar cada operación de un algorimo con un diagrama de flujo. Asegúrate de que la fuente es confiable, discute lo que encontraste con tus compañeros y con el profe. Cuando estés seguro/a de tener los símbolos correctos, consigna la información en la bitácora.
+
+Símbolos más comunes en un diagrama de flujo
+Símbolo	Nombre	Función
+🔷 (Rombo)	Decisión	Representa una pregunta o condición con dos posibles respuestas (Sí/No, Verdadero/Falso). Ej: ¿x > 10?
+🔽 (Óvalo)	Inicio / Fin	Señala el comienzo o final del algoritmo. Siempre debe haber al menos uno de cada.
+▭ (Rectángulo)	Proceso	Indica una acción o instrucción que debe ejecutarse. Ej: x = x + 1
+🔲 (Paralelogramo)	Entrada / Salida	Muestra la entrada de datos (Ej: leer nombre) o la salida de información (Ej: mostrar resultado).
+🔄 (Flechas)	Conectores de flujo	Indican el sentido del proceso. Muestran la dirección que sigue el algoritmo.
+
+FUENTE:
+Norma ANSI/ISO 5807
+![Imagen](../prog-2025-2-10am-unidad2-MiguelSCpro/images/Captura%20de%20pantalla%202025-07-31%20104500.png
+)
+
+## Ejercicio 2
+
+Analicemos el siguiente problema y representemos su solución mediante un algoritmo secuencial.
+
+- Construye un algoritmo que, al recibir como datos **el ID** del empleado y los seis primeros sueldos del año, calcule el ingreso total semestral y el promedio mensual, e imprima el ID del empleado, el ingreso total y el promedio mensual.
+
+## Solucion
+
+```
+Inicio
+leer ID,S1,S2,S3,S4,S5,S6
+Total = S1 + S2 + S3 + S4 + S5 + S6
+Promedio = Total/6
+Escribir ID, total, promedio
+FIN
+```
+### Diagrama de flujo
+![Ejercicio 2](../prog-2025-2-10am-unidad2-MiguelSCpro/images/Ejercicio%20de%20algoritmo%202.drawio.png)
+
+## ACTIVIDAD 3
+
+![EJERCICIO 3](../prog-2025-2-10am-unidad2-MiguelSCpro/images/Imagen%20de%20WhatsApp%202025-08-01%20a%20las%2018.31.22_4a9df35a.jpg)
+
+# SOLUCION PSEUDOCODIGO
+```
+Inicio
+Leer N1,N2,N3,N4,N5,N6
+TOTAL= N1 + N2 + N3 + N4 + N5 + N6
+PROMEDIO= TOTAL/6
+PARCIAL= PROMEDIO*0.7
+NECESARIA= (3.0-PARCIAL)/0.3
+ESCRIBIR TOTAL, PARCIAL, NECESARIA
+FIN
+```
+# SOLUCION DIAGRAMA DE FLUJO
+![DIAGRAMA DE FLUJO NUMERO 2](../prog-2025-2-10am-unidad2-MiguelSCpro/images/PROMEDIO%20DE%20NOTA%20NECESARIA%20PARA%20GANAR%20LA%20MATERIA.drawio.png)
+
+
+

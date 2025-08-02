@@ -43,3 +43,23 @@ FIN
 ### Diagrama de flujo
 ![Ejercicio 2](../prog-2025-2-10am-unidad2-MiguelSCpro/images/Ejercicio%20de%20algoritmo%202.drawio.png)
 
+## ACTIVIDAD 3
+
+![EJERCICIO 3](../prog-2025-2-10am-unidad2-MiguelSCpro/images/Imagen%20de%20WhatsApp%202025-08-01%20a%20las%2018.31.22_4a9df35a.jpg)
+
+# SOLUCION PSEUDOCODIGO
+```
+Inicio
+Leer N1,N2,N3,N4,N5,N6
+TOTAL= N1 + N2 + N3 + N4 + N5 + N6
+PROMEDIO= TOTAL/6
+PARCIAL= PROMEDIO*0.7
+NECESARIA= (3.0-PARCIAL)/0.3
+ESCRIBIR TOTAL, PARCIAL, NECESARIA
+FIN
+```
+# SOLUCION DIAGRAMA DE FLUJO
+![DIAGRAMA DE FLUJO NUMERO 2](../prog-2025-2-10am-unidad2-MiguelSCpro/images/PROMEDIO%20DE%20NOTA%20NECESARIA%20PARA%20GANAR%20LA%20MATERIA.drawio.png)
+
+
+

@@ -112,8 +112,9 @@ Escribir "Valor a pagar:", precio_final
 FIN
 ```
 # Diagrama de flujo de los descuentos
+![Diagrama de flujo](../prog-2025-2-10am-unidad2-MiguelSCpro/images/DIAGRAMA%20DE%20LOS%20DECUENTOS.png)
 
-
+# 5
 El director de una escuela está organizando un viaje de estudios, y requiere determinar cuánto debe cobrar a cada alumno y cuánto debe pagar a la compañía de viajes por el servicio. La forma de cobrar es la siguiente: si son 100 alumnos o más, el costo por cada alumno es de $65.00; de 50 a 99 alumnos, el costo es de $70.00, de 30 a 49, de $95.00, y si son menos de 30, el costo de la renta del autobús es de $4000.00, sin importar el número de alumnos.
 
 |Variables| Tipo|Comentario|
@@ -141,6 +142,8 @@ Fin
 ```
 # Digrama de flujo alumnos
 ![TEXTO](../prog-2025-2-10am-unidad2-MiguelSCpro/images/Captura%20de%20pantalla%202025-08-08%20080446.png)
+
+
 
 
 

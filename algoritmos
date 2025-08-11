@@ -144,7 +144,27 @@ Fin
 ![TEXTO](../prog-2025-2-10am-unidad2-MiguelSCpro/images/Captura%20de%20pantalla%202025-08-08%20080446.png)
 
 
+### Tarea
+![alt text](<Imagen de WhatsApp 2025-08-10 a las 12.26.53_2357a252.jpg>)
 
+```
+INICIO
+
+Leer dia_actual, mes_actual, año_actual, dia_nacimiento, mes_nacimiento, año_nacimiento
+
+Edad= Año_actual-Año_nacimiento
+
+   Si (mes_actual < Mes _nacimiento) O (Mes_act = mes_nacimiento y dia_actual < dia_nacimiento) 
+   
+   Entonces Edad= Edad-1
+
+   Fin SI
+Escribir Edad
+
+Fin
+```
+
+![Texto](../prog-2025-2-10am-unidad2-MiguelSCpro/images/Edad%202.png)
 
 
 

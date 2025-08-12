@@ -167,12 +167,65 @@ Fin
 ![Texto](../prog-2025-2-10am-unidad2-MiguelSCpro/images/Edad%202.png)
 
 
+### Bucles o Ciclos
+ 
+ ![alt text](image.png)
+
+ # Ejercicios
+ Se require un algoritmo para determinar de N cantidades cuantas son cero, cuantas son mayor que cero y cuantas son menores que cero.
+ Realice el diagrama de flujo y el pseudocodigo representarlo, utilizando el ciclo apropiado.
 
 
 
+ |Input|output|control|
+ |-----|------|-------|
+ |N, CANTIDAD|Ceros, mayores, menores| N|
 
 
+Pseudocodigo
 
+```
+INICIO
+Leer N
+Ceros=0
+mayores=0
+menores=0
+Mientras N > 0
+    Leer cant
+    Si cant > 0
+       mayores= mayores + 1
+    Si no 
+        Si cant = 0
+           ceros = ceros + 1
+        Si no 
+           menores = menores + 1
+        Fin si
+    Fin Si
+Fin Mientras
+Mostrar ceros, mayores, menores
+FIN
+```
+Diagrama de flujo
+![texto](../prog-2025-2-10am-unidad2-MiguelSCpro/images/BUCLE%201.png)
 
+## Ejercicio 3
+calcular el Factorial de un numero entero ingresado por el usuario.
+|input|output|control|
+|-----|------|-------|
+|N|Factorial|i|
+
+Pseudocodigo
+```
+Inicio
+  Leer N
+  Factorial = 1
+  Para i = 1 Hasta N Hacer
+      Factorial = Factorial * i
+  FinPara
+  Escribir Factorial
+Fin
+```
+
+    
 
 

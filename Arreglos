@@ -58,23 +58,16 @@ FIn
 ```
 INICIO
 i=0
-  Mientra i<12
+  Mientras i<12
     Leer temperatura
-    Datos[i]=temperatura
     i=i+1
-  Fin Mientras
 
-i=0
-  Mientras i<6
-    Mostrar Temperatura
-     i=i+1
-  Fin Mientras
+     Si temperatura > 27 o < 18
+       Escribir "Activar sistema de climatizacion"
+    
+     Fin si
 
-  Si temperatura > 27 o < 18
-     Escribir "Activar sistema de climatizacion"
-  Si no
-     Mostrar Temperatura
-  Fin si
+  Fin Mientras
 Fin
 ```
 

@@ -1,0 +1,276 @@
+## Pseudocódigo: 
+Es una representación en lenguaje natural de los pasos que conforman un algoritmo. Se utiliza para describir de manera estructurada y comprensible las acciones necesarias para resolver un problema antes de implementarlo en un lenguaje de programación.
+Por ejemplo, para calcular el área de un triángulo:
+Inicio
+Leer base, altura
+Calcular área = (base * altura) / 2
+Mostrar área
+Fin
+
+## Ejercicio 1.
+
+Investiga cuáles son los símbolos que se utilizan para representar cada operación de un algorimo con un diagrama de flujo. Asegúrate de que la fuente es confiable, discute lo que encontraste con tus compañeros y con el profe. Cuando estés seguro/a de tener los símbolos correctos, consigna la información en la bitácora.
+
+Símbolos más comunes en un diagrama de flujo
+Símbolo	Nombre	Función
+🔷 (Rombo)	Decisión	Representa una pregunta o condición con dos posibles respuestas (Sí/No, Verdadero/Falso). Ej: ¿x > 10?
+🔽 (Óvalo)	Inicio / Fin	Señala el comienzo o final del algoritmo. Siempre debe haber al menos uno de cada.
+▭ (Rectángulo)	Proceso	Indica una acción o instrucción que debe ejecutarse. Ej: x = x + 1
+🔲 (Paralelogramo)	Entrada / Salida	Muestra la entrada de datos (Ej: leer nombre) o la salida de información (Ej: mostrar resultado).
+🔄 (Flechas)	Conectores de flujo	Indican el sentido del proceso. Muestran la dirección que sigue el algoritmo.
+
+FUENTE:
+Norma ANSI/ISO 5807
+![Imagen](../prog-2025-2-10am-unidad2-MiguelSCpro/images/Captura%20de%20pantalla%202025-07-31%20104500.png
+)
+
+## Ejercicio 2
+
+Analicemos el siguiente problema y representemos su solución mediante un algoritmo secuencial.
+
+- Construye un algoritmo que, al recibir como datos **el ID** del empleado y los seis primeros sueldos del año, calcule el ingreso total semestral y el promedio mensual, e imprima el ID del empleado, el ingreso total y el promedio mensual.
+
+## Solucion
+
+```
+Inicio
+leer ID,S1,S2,S3,S4,S5,S6
+Total = S1 + S2 + S3 + S4 + S5 + S6
+Promedio = Total/6
+Escribir ID, total, promedio
+FIN
+```
+### Diagrama de flujo
+![Ejercicio 2](../prog-2025-2-10am-unidad2-MiguelSCpro/images/Ejercicio%20de%20algoritmo%202.drawio.png)
+
+## ACTIVIDAD 3
+
+![EJERCICIO 3](../prog-2025-2-10am-unidad2-MiguelSCpro/images/Imagen%20de%20WhatsApp%202025-08-01%20a%20las%2018.31.22_4a9df35a.jpg)
+
+# SOLUCION PSEUDOCODIGO
+```
+Inicio
+Leer N1,N2,N3,N4,N5,N6
+TOTAL= N1 + N2 + N3 + N4 + N5 + N6
+PROMEDIO= TOTAL/6
+PARCIAL= PROMEDIO*0.7
+NECESARIA= (3.0-PARCIAL)/0.3
+ESCRIBIR TOTAL, PARCIAL, NECESARIA
+FIN
+```
+# SOLUCION DIAGRAMA DE FLUJO
+![DIAGRAMA DE FLUJO NUMERO 2](../prog-2025-2-10am-unidad2-MiguelSCpro/images/PROMEDIO%20DE%20NOTA%20NECESARIA%20PARA%20GANAR%20LA%20MATERIA.drawio.png)
+
+## Ejercicios
+
+1. Realice un algoritmo para determinar cuánto se debe pagar por equis cantidad de lápices considerando que si son 1000 o más el costo es de $85 cada uno; de lo contrario, el precio es de $90. Represéntelo con el pseudocódigo y el diagrama de flujo.
+
+|Variables| Tipo|Comentario|
+|---------|-----|---------|
+|Lapices  | Entrada|Cantidad de lapices|
+|valor_unidad | Intermedia|Valor unitario de cada lapiz|
+|precio  | Salida|Precio Total de los lapices|
+|85, 90  | Constantes|No cambian|
+
+
+# pseudocodigo
+```
+Inicio
+Leer lapices
+Si lapices >= 1000
+     Valor_unidad=85
+si no
+    valor_unidad= 90
+fin si
+precio = lapices*valor_unidad
+Escribir "El valor total es:", precio
+Fin
+```
+# Diagrama de flujo
+![Texto](../prog-2025-2-10am-unidad2-MiguelSCpro/images/Diagrama%20de%20flujo%20lapices.png)
+# 4
+
+Un almacén de ropa tiene una promoción: por compras superiores a $250 000 se les aplicará un descuento de 15%, de caso contrario, sólo se aplicará un 8% de descuento. Realice un algoritmo para determinar el precio final que debe pagar una persona por comprar en dicho almacén y de cuánto es el descuento que obtendrá. Represéntelo mediante el pseudocódigo y el diagrama de flujo.
+
+|Variables| Tipo|Comentario|
+|---------|-----|---------|
+|total compra | Entrada | valor de la compra|
+|descuaento| salida| Descuento segun el valor de la compra|
+|precio final| salida | valor a pagar|
+15%, 8%, $250000| constatntes | descuentos y valor limite|
+
+```
+INICIO
+Leer total_compra
+Si total_compra > 250000;
+    descuento= total*0.15
+Si no 
+    descuento= total*0.08
+Fin si
+precio_final = total de compra - descuento
+Escribir "Valor a pagar:", precio_final
+FIN
+```
+# Diagrama de flujo de los descuentos
+![Diagrama de flujo](../prog-2025-2-10am-unidad2-MiguelSCpro/images/DIAGRAMA%20DE%20LOS%20DECUENTOS.png)
+
+# 5
+El director de una escuela está organizando un viaje de estudios, y requiere determinar cuánto debe cobrar a cada alumno y cuánto debe pagar a la compañía de viajes por el servicio. La forma de cobrar es la siguiente: si son 100 alumnos o más, el costo por cada alumno es de $65.00; de 50 a 99 alumnos, el costo es de $70.00, de 30 a 49, de $95.00, y si son menos de 30, el costo de la renta del autobús es de $4000.00, sin importar el número de alumnos.
+
+|Variables| Tipo|Comentario|
+|---------|-----|---------|
+|Alumnos|Entrada|numero de alumnos|
+|Costo_alumno|salida| precio del alumno|
+|precio total|salida|precio total a pagar segun la cantidad de alumnos|
+|100, 
+
+
+
+```
+Inicio
+Leer alumnos
+Si alumnos >= 100
+    Costo_alumno= 65
+Si no 
+    Si alumnos >= 50
+          costo_alumno = 70
+    Si no
+        Costo_alumno= 90
+    Fin Si
+Fin si
+Fin
+```
+# Digrama de flujo alumnos
+![TEXTO](../prog-2025-2-10am-unidad2-MiguelSCpro/images/Captura%20de%20pantalla%202025-08-08%20080446.png)
+
+
+### Tarea
+![alt text](<Imagen de WhatsApp 2025-08-10 a las 12.26.53_2357a252.jpg>)
+
+```
+INICIO
+
+Leer dia_actual, mes_actual, año_actual, dia_nacimiento, mes_nacimiento, año_nacimiento
+
+Edad= Año_actual-Año_nacimiento
+
+   Si (mes_actual < Mes _nacimiento) O (Mes_act = mes_nacimiento y dia_actual < dia_nacimiento) 
+   
+   Entonces Edad= Edad-1
+
+   Fin SI
+Escribir Edad
+
+Fin
+```
+
+![Texto](../prog-2025-2-10am-unidad2-MiguelSCpro/images/Edad%202.png)
+
+
+### Bucles o Ciclos
+ 
+ ![alt text](image.png)
+
+ # Ejercicios
+ Se require un algoritmo para determinar de N cantidades cuantas son cero, cuantas son mayor que cero y cuantas son menores que cero.
+ Realice el diagrama de flujo y el pseudocodigo representarlo, utilizando el ciclo apropiado.
+
+
+
+ |Input|output|control|
+ |-----|------|-------|
+ |N, CANTIDAD|Ceros, mayores, menores| N|
+
+
+Pseudocodigo
+
+```
+INICIO
+Leer N
+Ceros=0
+mayores=0
+menores=0
+Mientras N > 0
+    Leer cant
+    Si cant > 0
+       mayores= mayores + 1
+    Si no 
+        Si cant = 0
+           ceros = ceros + 1
+        Si no 
+           menores = menores + 1
+        Fin si
+    Fin Si
+Fin Mientras
+Mostrar ceros, mayores, menores
+FIN
+```
+Diagrama de flujo
+![texto](../prog-2025-2-10am-unidad2-MiguelSCpro/images/BUCLE%201.png)
+
+## Ejercicio 3
+calcular el Factorial de un numero entero ingresado por el usuario.
+|input|output|control|
+|-----|------|-------|
+|N|Factorial|i|
+
+Pseudocodigo
+```
+Inicio
+  Leer N
+  Factorial = 1
+  Para i = 1 Hasta N Hacer
+      Factorial = Factorial * i
+  FinPara
+  Escribir Factorial
+Fin
+```
+## Ejercicio 4
+![alt text](<Imagen de WhatsApp 2025-08-13 a las 19.54.32_462cdbc6.jpg>)
+
+```
+INICIO
+    suma = 0
+    contador = 0
+
+    LEER estatura
+
+    MIENTRAS estatura ≠ 0 HACER
+        suma = suma + estatura
+        contador = contador + 1
+        LEER estatura
+    FINMIENTRAS
+
+    SI contador > 0 ENTONCES
+        promedio = suma / contador
+        ESCRIBIR "La estatura promedio es: ", promedio
+    SINO
+        ESCRIBIR "No se ingresaron estaturas"
+    FIN SI
+FIN
+```
+
+# Ejercicio 5
+Consultar cómo funcionan las tarjetas de crédito. Asumir una tasa de interés fija (2%). Preguntar al usuario el valor de la compra y el número de cuotas. Calcular y mostrar en pantalla. El valor de cada una de las cuotas que debe pagar hasta saldar la deuda.
+
+```
+INICIO
+leer compra
+    leer cuotas
+    r = 0.02
+
+    si cuotas <= 0 entonces
+        escribir "numero de cuotas invalido"
+    sino
+        cuota = (compra + compra*r*cuotas) / cuotas
+
+        i = 1
+        mientras i <= cuotas hacer
+            escribir "cuota ", i, ": ", cuota
+            i = i + 1
+        fin mientras
+    fin si
+FIN
+```
+
+

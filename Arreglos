@@ -71,3 +71,72 @@ i=0
 Fin
 ```
 
+## 2. **Control de temperatura del motor**
+    
+    Durante una inspección de rutina, se mide la temperatura de un motor de turbina. Si la temperatura es mayor a un valor crítico, se debe indicar "Peligro: sobrecalentamiento". Si está dentro del rango seguro, indicar "Operación normal". Si es demasiado baja, indicar "Motor frío – Calentar antes de operar".
+
+# Solucion:
+
+|Input|output|control|
+|-----|------|-------|
+|temperatura, |
+
+```
+INICIO
+  Leer temperatura
+  Leer T_min     
+  Leer T_max   
+
+  Si temperatura > T_max Entonces
+      Escribir "Peligro: Sobrecalentamiento"
+  Sino
+      Si temperatura < T_min Entonces
+          Escribir "Motor frío - Calentar antes de operar"
+      Sino
+          Escribir "Operación normal"
+      Fin Si
+  Fin Si
+FIN
+```
+
+## 2. **Control de combustible en pruebas**
+    
+    Durante un ensayo en banco de un motor a reacción, se mide el nivel de combustible cada minuto y se detiene el registro cuando el combustible baja del 10%. Mostrar el tiempo total de operación antes de llegar a ese punto.
+  
+# Solucion
+
+```
+INICIO
+  Leer Nivel_inicial
+  Nivel = Nivel_inicial
+  i = 0
+
+  Mientras Nivel > Nivel_inicial * 0.1
+      i = i + 1
+      Leer Nivel  
+  Fin Mientras
+
+  Escribir "El tiempo total es: ", i, " minutos"
+FIN
+
+```
+## 3. **Simulación de conteo de pasajeros**
+    
+    Durante el abordaje, un sistema cuenta a los pasajeros que ingresan. Si el número total supera la capacidad máxima, el sistema debe detener el conteo y mostrar un mensaje de alerta.
+
+# Solucion
+
+```
+INICIO
+  Leer capacidad_maxima
+  pasajeros = 0
+
+  Mientras pasajeros < capacidad_maxima
+      pasajeros = pasajeros + 1
+      Escribir "Pasajero ingresó. Total: ", pasajeros
+  Fin Mientras
+
+  Escribir "Alerta: capacidad máxima alcanzada"
+FIN
+
+```
